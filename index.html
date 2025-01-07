@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Türkçe dil desteği sağlar -->
+    <!-- Telefonda ki görünümünü düzeltir. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="C Sahrp Dersleri, Html Dersleri">
+    <!-- Aramalarda öne çıkmayı sağlayan kelimeler verilir.-->
+    <meta name="description" content="Elmanın faydaları"> <!-- Sayfaya girmeden açıklamaların görünmesini sağlar.-->
+
+    <title>Html Öğreniyorum</title>
+</head>
+
+<body>
+    <p>Hello. Ben Gamze Kaşyol. Bu süreçte Html öğreniyorum.</p>
+    <p>Amacım backend developer olmak. Sene 2025 Ocak ayındayız.</p>
+    <!-- Header Elementleri-->
+    <h1>Gamze Kaşyol</h1>
+    <h2>Gamze Kaşyol</h2>
+    <h3>Gamze kaşyol</h3>
+
+    <!-- Biçimlendirme Elementleri-->
+    <hr> <!-- Çizgi çizer. -->
+    <p>
+        <strong> <!-- Kalın yapar. -->
+            <i> <!-- İtalik yapar. -->
+                <mark>Html Dersleri
+                </mark> <!-- Üstünü çizer. -->
+            </i>
+        </strong>
+    </p>
+    <p>
+        <br> <!-- Bir satır boşluk bırakır. -->
+        <b>Backend</b> <!-- Kalın yapar. -->
+    </p>
+
+    <!-- İmage Etiketi-->
+    <hr>
+    <center> <!-- Ortala -->
+        <img src="/resimler/turkbayragi.jpg" alt="Kaynak bulunamdı." width="500" height="300" />
+        <br>
+        <h2>İSTİKLAL MARŞI</h2>
+        <p>Korkma, sönmez bu şafaklarda yüzen al sancak; </p>
+        <p>Sönmeden yurdumun üstünde tüten en son ocak. </p>
+        <p>O benim milletimin yıldızıdır, parlayacak; </p>
+        <p>O benimdir, o benim milletimindir ancak.</p>
+        <br>
+        <p>Çatma, kurban olayım, çehreni ey nazlı hilâl! </p>
+        <p>Kahraman ırkıma bir gül! Ne bu şiddet, bu celâl? </p>
+        <p>Sana olmaz dökülen kanlarımız sonra helâl… </p>
+        <p>Hakkıdır, Hakk’a tapan, milletimin istiklâl!</p>
+    </center>
+
+    <!--Link Etiketi -->
+    <hr>
+    Google'a gitmek için <a href="https://www.google.com.tr/?hl=tr" target="_blank">tıklayınız</a>.
+
+    <!-- Sıralı Sırasız Listeler-->
+    <ul>
+        <li>Kahve</li>
+        <li>Çay</li>
+        <li>Meyve Suyu</li>
+    </ul>
+    <ol type="1">
+        <li>Kahve</li>
+        <li>Çay</li>
+        <li>Meyve Suyu</li>
+    </ol>
+    <br>
+    <ol type="1">
+        <li>İç Donanım Birimleri</li>
+        <ol type="I">
+            <li>Anakart</li>
+            <li>İşlemci</li>
+            <li>Bellek</li>
+        </ol>
+        <li>Dış Donanım Birimleri</li>
+        <ol type="1">
+            <li>Monitör</li>
+            <ol type="a">
+                <li>LCD</li>
+                <li>LED</li>
+            </ol>
+            <li>Klavye</li>
+            <li>Fare</li>
+        </ol>
+    </ol>
+
+    <!-- Table Etiketi -->
+    <table border="5">
+        <tr>
+            <th colspan="3">Kişisel Bilgiler</th>
+        </tr>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Yaş</th>
+        </tr>
+        <tr>
+            <td>Gamze</td>
+            <td>Kaşyol</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <br>
+
+    <table border="3" style="border-color: green;">
+            <tr>
+                <th colspan="3">Product</th>
+            </tr>
+            <tr>
+                <th>No</th>
+                <th>P.Name</th>
+                <th>P.Count</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pen</td>
+                <td rowspan="3">50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Book</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dust</td>
+            </tr>
+    </table>
+    <hr>
+
+    <!-- div etiketi-->
+     <style>
+        .divOzellik{
+            width: 100;
+            height: 300;
+            background-color: antiquewhite;
+        }
+     </style>
+
+     <div class="divOzellik">Gamze</div>
+<hr>
+     <!-- Form etiketi-->
+     <form >
+       Adınız:  <input type="text" placeholder="İsminiz"/>
+       <input type="password" placeholder="Şifreniz">
+       <input type="email" placeholder="Email adres"> <br>
+       Kitap Okumak <input type="checkbox"><br>
+       Spor Yapmak  <input type="checkbox"><br> <br>
+       Kadın <input type="radio" name="cinsiyet" checked="true"><br> <!--name i aynı yazarak sadece birnin seçilmeisni sağlarız-->
+       Erkek <input type="radio" name="cinsiyet"> <br>  <br>
+       İçecek Seçiniz <br>
+       <select>
+        <option value="Çay">Çay</option>
+        <option value="Kahve">Kahve</option>
+        <option value="Limonata">Limonata</option>
+       </select> <br> <br>
+       <input type="file" > <br>
+        <br>
+        <textarea name="mesajİnput" id="mesajAlani" cols="30" rows="10"></textarea> <br>
+        <br> 
+       <input type="submit" value="Gönder">
+       <input type="reset" value="Temizle">
+     </form>
+
+    <!-- IFrame Kullanımı (Başkasının sitesini kendi sitenizde gösterme)--> 
+     <iframe src="http://enesbayram.net" frameborder="0" width="600" height="800"></iframe>
+
+
+</body>
+
+
+</html>

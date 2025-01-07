@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app_01.css"> <!-- Css dosyası ile bağlamamızı sağlar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- İkon dosyası için -->
+    <style>
+        /* css yazma çeşitleri*/
+        h2 {
+            color: rgb(250, 45, 245);
+        }
+
+        .yazi-ozellik {
+            /* class */
+            color: green;
+        }
+
+        #paragraf1 {
+            /* id */
+            background-color: aqua;
+        }
+
+        i {
+            color: pink;
+            font-size: 20px;
+
+        }
+
+        /* Link Özellikleri*/
+        /* Link ilk halidir. */
+        /* Hover Üzerine gelindiğinde */
+        /* Active link üzerine tıklandığında  */
+        /* visited tıklandıktan sonraki hali */
+        a:link {
+            color: blue;
+            text-decoration: none;
+            /* Çizgiyi kaldırır. */
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        a:active {
+            color: red;
+            background-color: aquamarine;
+        }
+
+        a:visited {
+            color: violet;
+        }
+
+        /* Index özelliği */
+        .gul {
+            position: absolute;
+            z-index: -1;
+            top: 1950px;
+        }
+
+        .b1 {
+            margin-left: 75px;
+            color: pink;
+            opacity: 80%;
+            font-style: italic;
+            font-size: x-large;
+            text-decoration: dotted;
+
+        }
+
+        /* Overflow */
+        .overflow {
+            background-color: lightgray;
+            margin-top: 180px;
+            width: 500px;
+            height: 200px;
+            overflow: auto;
+            /* visible: defoult olarak gelir  otomatik taşar. */
+            /* hidden: sığdığı kadar gösterir. */
+            /* scroll: yana ve alta bar ekler. Gerek olsa da olmasada ekler. */
+            /* auto: scroll gibi bar ekler ancak gerektiği durumlarda ekler. */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gamze Kaşyol </h1>
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </h2>
+    <p class="yazi-ozellik">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quod voluptatum.</p>
+    <p id="paragraf1">Css Öğreniyorum. </p>
+
+    <!-- Div -->
+    <div class="kutu1"></div>
+    <div class="kutu2">
+        <h3>Lorem, ipsum.</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, numquam?</p>
+    </div>
+    <br>
+    <div class="a1">
+        <div class="a2">İç Div</div>
+    </div>
+
+    <!-- Margin, Padding -->
+    <div class="liste1"> Liste 1</div>
+    <div class="liste2">Liste 2</div>
+
+
+    <!-- Display : inline, block, inline block-->
+    <!--inline: tüm satırı kaplar. genişlik ve yükseklik değerleri alamaz. -->
+    <!-- bloc: Sadece yazı kadar alan kaplar. Genişlik ve yükseklik değerleri alır-->
+    <!-- inline block: İki türlü de davranması demektir. Örneğin aşağıdaki div ile oluşturulmuş kutuların yan yana durmasını sağladı. -->
+    <p style="display: inline;">Lorem ipsum dolor sit amet.</p>
+    <a href="#" style="display: block;"> Link </a>
+    <div class="sekil1"></div>
+    <div class="sekil2"></div>
+
+    <!-- Text-Font Özellikleri-->
+    <p class="p1">Başarı bedel ister.</p>
+
+    <!-- İkon Ekleme-->
+    <i class="fa-brands fa-google"> </i>
+    <a href="https://www.google.com.tr/?hl=tr">Tıklayınız</a>
+
+    <br>
+
+    <!-- Lİnk Özellikleri -->
+    <a class="link1" href="https://www.google.com.tr/?hl=tr" target="_blank">Google</a>
+
+    <!-- Listelerin ikonlarını değiştrime -->
+    <hr>
+    <ul class="li1">
+        <li>Kahve</li>
+        <li>Çay</li>
+        <li>Salep</li>
+    </ul>
+    <br>
+    <ol class="li2">
+        <li>Kahve</li>
+        <li>Çay</li>
+        <li>Salep</li>
+    </ol>
+    <hr>
+    <!-- Z index : İki elementin üst üste gelmesini sağlar-->
+    <div>
+        <h3 class="b1">GÜL</h3>
+        <img class="gul" src="gul.jpg" alt="Kaynak Bulunamadı." width="200px" />
+    </div>
+
+    <!-- Overflow(Taşma)-->
+   
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, architecto quas officiis amet maxime ea
+            dignissimos dolorem numquam molestias eaque cumque inventore atque molestiae rerum corporis suscipit tempora
+            tempore ducimus?</p>
+            <p>Gamze</p>
+            <p>Gamze</p>
+            <p>Gamze</p>
+            <p>Gamze</p>
+            <p>Gamze</p>
+            <p>Gamze</p>
+    </div>
+
+</body>
+
+
+</html>

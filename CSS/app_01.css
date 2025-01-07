@@ -1,0 +1,77 @@
+h1{
+    color: blue;
+}
+.kutu1{
+    background-color: grey;
+    width: 250px;
+    height: 100px;
+    border: 5px solid red;
+    border-radius: 15px;
+}
+.kutu2{
+    background-image: url(background.image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 250px;
+    color: white;
+   text-align: center;
+}
+.a1{
+    background-color: green;
+    width: 50%;  /* px den farkı ekranın boyutune göre kendini ayarlar. Yani ekaran büyüdükçe veya küçüldükçe %50 alan kaplar.*/
+    height: 100px;
+}
+.a2{
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+}
+.liste1{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 100px;
+    margin-top: 50px;
+    padding: 50px;
+}
+.liste2{
+    background-color: aqua;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+.sekil1{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+.sekil2{
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+.p1{
+    color: blueviolet;
+    background-color: turquoise;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;  /* Harfler arası boşluk*/
+    text-decoration: dotted; /* Çizgi çizer.*/
+    word-spacing: 5px; /* Kelimeler arasındaki boşluk*/ 
+}
+
+/* Liste İkonlarını Değiştirme */
+.li1{
+    list-style-type: square;
+}
+.li2{
+    list-style-type: circle;
+}
